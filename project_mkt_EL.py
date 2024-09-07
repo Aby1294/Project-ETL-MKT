@@ -15,7 +15,7 @@ def get_data(start_date, end_date, path_file):
     :param path_file: Ruta del archivo donde se almacenarán los datos.
     """
     url = f'https://my.api.mockaroo.com/project_elt_mkt.json?start_date={start_date}&end_date={end_date}'
-    headers = {'X-API-Key': 'f4ab4d20'}
+    headers = {'NOmbre de llave': 'llave1234'}
     r = requests.get(url, headers=headers)
     
     with open(path_file, 'wb') as f:
